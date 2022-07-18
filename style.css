@@ -1,0 +1,22 @@
+#main #result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+#user1{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}
+
+
+#user2{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+}

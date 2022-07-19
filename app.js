@@ -36,40 +36,6 @@ else {
     alert("Please enter Information Correctly")
 }
 
-// Call is received now time to generate random value for the toss
-// var count = 0;
-// var point = 0;
-// function flip() {
-//     var tossRandom = Math.floor(Math.random() * 2);
-
-//     console.log("toss", tossRandom)
-//     if (tossRandom == 0) {
-//         document.getElementById("result").innerHTML = "<h1>Heads</h1>";
-//         if (userRandom == 0 && call == "heads") {
-//             var count = count + 1;
-//             document.getElementById("user1").innerHTML = "<h2>" + user1 + " <br>" + count + "</h2>"
-//             console.log("Count", count)
-//         }
-//         // else if (userRandom == 0 && call == "tails") {
-//         //     point++;
-//         //     document.getElementById("user2").innerHTML = "<h2>" + point + "</h2>"
-//         //     console.log("point", point)
-//         // }
-//         // else if (userRandom == 1 && call == "heads") {
-//         //     var count = count + 1;
-//         //     document.getElementById("user2").innerHTML = "<h2>" + user2 + " <br>" + count + "</h2>"
-//         //     console.log("point", count)
-//         // }
-//     }
-//     else {
-//         document.getElementById("result").innerHTML = "<h1>Tails</h1>"
-//         // if (userRandom == 1 && call == "tails") {
-//         //     count++;
-//         //     document.getElementById("user2").innerHTML = "<h2>" + user2 + " <br>" + point + "</h2>"
-//         //     console.log("point", point)
-//         // }
-//     }
-// }
 
 var score1 = 0;
 var score2 = 0;
@@ -78,14 +44,14 @@ function flip() {
     var randomNumberForFliping = Math.floor(Math.random() * 2) + 1;
     switch (randomNumberForFliping) {
         case 1:
-            document.getElementById("result").innerText = "Heads";
+            document.getElementById("result").innerHTML = "<h1>Heads</h1>";
             score1 = score1 + 1;
-            document.getElementById("user1").innerHTML = "<h2>" + user1 + " <br>" + score1 + "</h2>"
+            document.getElementById("user1").innerHTML = "<h2> Players 1: " + user1 + " <br>" + score1 + "</h2>"
             break;
         case 2:
-            document.getElementById("result").innerText = "Tails";
+            document.getElementById("result").innerHTML = "<h1>Tails</h1>";
             score2 = score2 + 1;
-            document.getElementById("user2").innerHTML = "<h2>" + user2 + " <br>" + score2 + "</h2>"
+            document.getElementById("user2").innerHTML = "<h2> Player 2: " + user2 + " <br>" + score2 + "</h2>"
             break;
     }
 }

@@ -8,15 +8,17 @@ body{
     background-color: antiquewhite;
 }
 
-#user1{
+#user1 {
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 350px
 }
 
-
-#user2{
+#user2 {
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
+    height: 180px;
+    width: 410px;
+    position: absolute;
+    top: 18%;
+    left: 30%;
 }
